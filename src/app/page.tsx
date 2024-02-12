@@ -1,3 +1,9 @@
+import Intro from "@/sections/Intro";
+
 export default function Home() {
-  return <main className={"text-green-500"}>Hello World</main>;
+  return (
+    <main className="flex flex-col items-center justify-center px-4">
+      <Intro />
+    </main>
+  );
 }
