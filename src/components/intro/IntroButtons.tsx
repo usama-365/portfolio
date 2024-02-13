@@ -1,5 +1,4 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
 
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
@@ -43,24 +42,5 @@ export default function IntroButtons() {
         <BsGithub />
       </a>
     </div>
-  );
-}
-
-function IntroButton({
-  children,
-  variant = "light",
-  href,
-}: {
-  children: ReactNode;
-  variant?: "light" | "dark";
-  href: string;
-}) {
-  return (
-    <Link
-      href={href}
-      className={`flex items-center justify-center gap-2 rounded-full ${variant === "dark" ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"} px-7 py-3 `}
-    >
-      {children}
-    </Link>
   );
 }
